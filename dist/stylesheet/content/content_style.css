@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+.quizlet_question * {
+  font-family: "Open Sans", sans-serif; }
+
+.quizlet_question_frame {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #282538;
+  z-index: 1200;
+  padding: 15px;
+  box-sizing: content-box; }
+
+.quizlet_question_title, .quizlet_question_main {
+  color: #dfdde8;
+  margin: 15px 5px;
+  line-height: 20px; }
+
+.quizlet_question_select {
+  background: #4c4370;
+  color: #dfdde8;
+  padding: 10px 15px;
+  margin: 5px;
+  border-width: 0px;
+  box-sizing: content-box; }
+  .quizlet_question_select:hover {
+    background: #625690; }

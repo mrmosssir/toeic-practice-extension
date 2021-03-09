@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "TOEIC Vocabulary Practice",
+    "version": "0.1.2",
+    "description": "popup the topic to practice vocabulary",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "./stylesheet/content/content_style.css"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_title": "TOEIC Vocabulary Practice",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "background",
+        "storage"
+    ]
+}

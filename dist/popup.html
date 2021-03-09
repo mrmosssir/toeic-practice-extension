@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+    <title>TOEIC Vocabulary Practice</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>
+        設定
+      </h1>
+      <ul class="setting">
+        <li>
+          <span>測驗啟動</span>
+          <label class="switch__label" id="enable_switch" for="enable_switch_input">
+            <input type="checkbox" id="enable_switch_input" />
+          </label>
+        </li>
+      </ul>
+      <div class="toggle-wrapper hide">
+        <div class="toggle checkcross">
+          <input class="hide" id="check_start_quiz" type="checkbox" />
+          <label class="toggle-item" for="check_start_quiz">
+            <div class="check"></div>
+          </label>
+        </div>
+      </div>
+      <ul class="classification hide"></ul>
+      
+    </div>
+    <script src="./popup.js"></script>
+  </body>
+</html>

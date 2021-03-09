@@ -1,0 +1,42 @@
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: relative;
+}
+
+.toggle-item {
+  width: 60px;
+  background: $secondary;
+  height: 30px;
+  display: inline-block;
+  border-radius: 50px;
+  position: relative;
+  transition: all 0.3s ease;
+  transform-origin: 20% center;
+  cursor: pointer;
+}
+
+.checkcross {
+  label:before {
+    content: none;
+  }
+  .check {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: #c34a4a;
+    transition: 0.4s ease;
+    top: 4.5px;
+    left: 4.5px;
+  }
+}
+
+#check_start_quiz:checked + label {
+  .check {
+    left: 35px;
+    background: $word;
+  }
+}

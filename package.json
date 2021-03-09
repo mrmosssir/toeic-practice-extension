@@ -1,0 +1,27 @@
+{
+  "name": "quizlet_crawler",
+  "version": "1.0.0",
+  "description": "this repository is for get vocabulary on Quizlet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.5",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-watch": "^5.0.1",
+    "mongoose": "^5.11.18",
+    "node-sass": "^5.0.0",
+    "request": "^2.88.2"
+  }
+}

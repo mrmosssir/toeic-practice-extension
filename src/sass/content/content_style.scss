@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+$primary: #282538;
+$secondary: #4c4370;
+$word: #dfdde8;
+
+.quizlet_question {
+  * {
+    font-family: "Open Sans", sans-serif;
+  }
+  &_frame {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: $primary;
+    z-index: 1200;
+    padding: 15px;
+    box-sizing: content-box;
+  }
+  &_title,
+  &_main {
+    color: $word;
+    margin: 15px 5px;
+    line-height: 20px;
+  }
+  &_select {
+    background: $secondary;
+    color: $word;
+    padding: 10px 15px;
+    margin: 5px;
+    border-width: 0px;
+    box-sizing: content-box;
+    &:hover {
+      background: lighten($secondary, 10%);
+    }
+  }
+}
